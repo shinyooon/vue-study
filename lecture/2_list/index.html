@@ -1,0 +1,22 @@
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="index.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<ul>
+				<template v-for="item in items">
+					<li >
+						<p>{{item.title}}</p>
+					</li>
+					<li >
+						<img :src="item.image" />
+					</li>
+				</template>
+			</ul>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
