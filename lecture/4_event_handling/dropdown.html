@@ -1,0 +1,24 @@
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="index.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<!--
+			함수와 메소드 차이
+			메소드 : json 객체나 클래스 등에 속해있는 함수
+		-->
+		<div id="app">
+			<div :class="[dropdown, toggle]" :style="[style, fontStyle]" >
+				<button type="button" @click="click">버튼</button>
+				<ul>
+					<li v-for="li in list">
+						{{li.title}}
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

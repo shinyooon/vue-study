@@ -1,0 +1,20 @@
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="index.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<!--
+			함수와 메소드 차이
+			메소드 : json 객체나 클래스 등에 속해있는 함수
+		-->
+		<div id="app">
+			<!-- <button type="button" v-on:click="add">더하기</button> -->
+			<button type="button" @click="add">더하기</button>
+			{{counter}}
+			<input type="text" @keyup.enter="keyUp" />
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

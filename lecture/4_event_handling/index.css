@@ -1,0 +1,12 @@
+html, body, ul, li {margin:0;padding:0}
+ul, li{list-style:none;}
+
+
+.dropdown ul{
+	display:none;
+	width:200px;
+	padding:10px;
+}
+.dropdown.on ul {
+	display:block;
+}
