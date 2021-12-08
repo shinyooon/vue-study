@@ -1,0 +1,35 @@
+html, body, ul, li {margin:0;padding:0}
+ul, li{list-style:none;}
+a{
+	text-decoration:none;
+	color:#333;
+}
+
+.item_list{
+	text-align:center;
+	margin:20px;
+}
+
+.item{
+	width:200px;
+	display:inline-block;
+	box-shadow: 5px 5px 5px 3px #efefef;
+}
+.item ~ .item{
+	margin-left:20px;
+}
+.item_info{
+	text-align:left;
+	padding:15px;
+}
+.item_image img{width:100%;height:auto;}
+.profile_image{
+	display:block;
+	border-radius:15px;
+	overflow:hidden;
+	width:30px;
+	height:30px;
+}
+.profile_image img{
+	width:100%;
+}
